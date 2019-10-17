@@ -1,0 +1,176 @@
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .navbar li:hover {
+    background-color: greenyellow;
+  }
+
+  .carousel {
+    position: relative;
+  }
+  
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    position: relative;
+    display: none;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+  
+  }
+
+  h4 {
+    margin-top: 0px;
+    width: 100%;
+    
+    background-color: greenyellow;
+    text-align: center;
+  }
+
+  
+  .h42 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+    background-color:  rgb(67, 217, 255);
+    text-align: center;
+  }
+  .content {
+    text-align: center;
+    padding: 0px;
+    line-height: 0.7;
+    padding-bottom: 2%;
+  }
+  .content2 {
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%
+  }
+
+  .button {
+    background-color: white;
+     border: none;
+     color:greenyellow;
+     padding: 15px 40px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+   }
+   
+   #info {
+     margin-top: 0px;
+     color: greenyellow;
+     width: 100%;
+     height: 30px;
+     background-color:black;
+     text-align: center;
+   }
+   
+   #september {
+     border-collapse: collapse;
+     width: 70%;
+     margin-left: 15%;
+     margin-right: 15%;
+     text-align: left;
+     
+   }
+   
+   #september td, #september th {
+     /* border: 1px solid #dddddd; */
+     text-align: left;
+     padding: 2px;
+   }
+   
+   #september tr:nth-child(even) {
+     background-color: greenyellow;
+   }
+   
+   #october {
+     border-collapse: collapse;
+     width: 70%;
+     margin-left: 15%;
+     margin-right: 15%;
+     text-align: left;
+     
+   }
+   
+   #october td, #october th {
+     /* border: 1px solid #dddddd; */
+     text-align: left;
+     padding: 2px;
+   }
+   
+   #october tr:nth-child(even) {
+     background-color: rgb(67, 217, 255);
+   }
+   
+   
+   
+   #rules {
+     margin-right: 10%;
+     margin-left: 10%
+   }
+   
+   .footer{
+    height: 200px;
+     background-color: rgb(67, 217, 255);
+     width: 100%;
+     padding-top: 10px;
+   
+     text-align: center;
+   }
+   
+   
+   
+   input[type=text], input[type=date], input[type=number] {
+     width: 100%;
+     padding: 5px 10px;
+     margin: 2px 0;
+     box-sizing: border-box;
+   }
+   
+   
+   .form-group{
+     margin-right: 20%;
+     margin-left: 20%
+   }
+   
+   .button2{
+     background-color:black;
+     border: none;
+     color:greenyellow;
+     padding: 15px 40px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 10% 20%;
+     
+   }
+   
+   
+   .location {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 70%;
+     margin-top: 1%;;
+     margin-left: 15%;
+     margin-right: 15%;
+     text-align: left;
+     background-color: greenyellow;
+     
+   }
