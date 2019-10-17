@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Document</title>
+  <title>NYSL</title>
+  <link rel="icon" type="image/icon" href="img/favicon.ico" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -22,35 +23,36 @@
 </head>
 
 
-<body>
+<body id="top">
   <div class="container">
 
     <nav class="navbar navbar-expand-lg <!-- navbar-light --> ">
       <a class="navbar-brand" href="#">
         <img src="img/nysl_logo.png " width="50" height="50" alt="" />
       </a>
+      <p class="h6" id="title">NORTHSIDE YOUTH SOCCER LEAGUE</p>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link text-dark" href="#index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link text-dark" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#info">Game information</a>
+            <a class="nav-link text-dark" href="index.html#info">Game information</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-dark" href="about.html">About NYSL</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#rules">Rules</a>
+            <a class="nav-link text-dark" href="about.html#rules">Rules</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="contact.html">Contact</a>
+            <a class="nav-link text-dark" href="#contact.html">Registration <span class="sr-only">(current)</span></a>
           </li>
         </ul>
       </div>
@@ -76,128 +78,207 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-      <h4>CONTACT FORM</h4>
+      </div>
+      <h4>REGISTRATION FORM</h4>
       <form action="/data.html" method="get">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="firstName">Player’s First Name:</label>
-            <input type="text" class="form-control" id="firstName" name="FirstName" placeholder="Player’s First Name" />
-          </div>
-          <div class="form-group">
-            <label for="lastName">Last Name:</label>
-            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+        <div class="form-group">
+          <div class="form-row no-gutters">
+            <label class="col-sm" for="firstName">First Name: <input type="text" class="form-control form-control-sm" id="firstName" name="FirstName" placeholder="Player’s First Name" /></label>
+            <!-- <div class="col"></div> -->
+            <label class="col-sm" for="lastName">Last Name: <input type="text" class="form-control form-control-sm" id="lastName" name="lastName" placeholder="Last Name" /></label>
           </div>
         </div>
         
         <div class="form-group">
-          <label for="inputAddress">Street Address</label>
-          <input type="text" class="form-control" id="inputAddress" name="Address" placeholder="1234 Main St" />
+          <div class="form-row">
+            <label class="col-md" for="inputAddress">Street Address: <input type="text" class="form-control form-control-sm" id="inputAddress" name="Address" placeholder="1234 Main St" /></label>
+            <label class="col-md" for="inputCity" name="city">City: <input type="text" class="form-control form-control-sm" id="inputCity" /></label>
+            <label class="col-md" for="inputZip">Zip Code: <input type="text" class="form-control form-control-sm" name="zip" id="inputZip" /></label>
+          </div>
         </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="inputCity" name="city">City</label>
-
-            <input type="text" class="form-control" id="inputCity" />
-          </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" name="zip" id="inputZip" />
-          </div>
-          <div class="form-group col-md-2">
-            <label for="BirthDate">Birth Date: </label>
-            <input type="date" class="form-control" name="BirthDate" id="BirthDate" />
-          </div>
+        <div class="form-group">
+          <div class="form-row">
+            <label class="col-lg" for="BirthDate">Birth Date: <input type="date" class="form-control form-control-sm" name="BirthDate" id="BirthDate" /></label>
+          <!-- </div>
         </div>
         <br />
         
         <div class="form-group">
-          <div class="form-check">
-            <label for="Gender">Gender</label>
-            <input type="radio" name="gender" value="male" checked /> Male
-            <input type="radio" name="gender" value="female" /> Female
+          <div class="form-row"> -->
+            <div class="form-row col-lg">
+              <label class="col-lg" for="Gender">Gender</label>
+              <div class="col-lg">
+                <label for="male"><input type="radio" id="male" name="gender" value="male"  /> Male</label>
+              </div>
+              <div class="col-lg">
+                <label for="female"><input type="radio" id="female" name="gender" value="female" /> Female</label>
+              </div>
+            </div>
           </div>
           <br />
-          <div class="form-check">
+          <div class="form-row">
             <label for="Grade">Grade:</label>
-            <input type="checkbox" name="PreSchool" value="PreSchool" />
-            Pre-School <input type="checkbox" name="Grade" value="uno" /> 1st
-            <input type="checkbox" name="2nd" value="Grade" /> 2nd
-            <input type="checkbox" name="3rd" value="Grade" /> 3rd
-            <input type="checkbox" name="4th" value="Grade" /> 4th
-            <input type="checkbox" name="5th" value="Grade" /> 5th
+            <div class="col-md">
+              <label for="PreSchool"><input type="radio" id="PreSchool" name="PreSchool" value="PreSchool" /> Pre-School</label>
+            </div>
+            <div class="col-md">
+              <label for="1st"><input type="radio" id="1st" name="1st" value="1st" /> 1st</label>
+            </div>
+            <div class="col-md">
+              <label for="2nd"><input type="radio" id="2nd" name="2nd" value="2nd" /> 2nd</label>
+            </div>
+            <div class="col-md">
+              <label for="3rd"><input type="radio" id="3rd" name="3rd" value="3rd" /> 3rd</label>
+            </div>
+            <div class="col-md">
+              <label for="4th"><input type="radio" id="4th" name="4th" value="4th" /> 4th</label>
+            </div>
+            <div class="col-md">
+              <label for="5th"><input type="radio" id="5th" name="5th" value="5th" /> 5th</label>
+            </div>
           </div>
         </div>
         <div class="form-group">
           <label for="Parent">Parent/Guardian:</label>
-          <input type="text" placeholder="Parent/Guardian" />
+          <input type="text" class="form-control form-control-sm" placeholder="Parent/Guardian" />
         </div>
         <div class="form-group">
           <label for="phone">Contact Phone:</label>
-          <input type="number" name="phone" placeholder="phone number" />
-        </div>
-
-        <div class="form-group">
-          <p><b> Which elementary schools do you live near?</b></p>
-          <label for="Closest"> <b> First Closest School:</b></label><br />
-          <input type="checkbox" name="AJ Katzenmaier" checked /> AJ Katzenmaier
-          <input type="checkbox" name="Marjorie P Hart" />Marjorie P Hart
-          <input type="checkbox" name="Greenbay " />Greenbay
-          <input type="checkbox" name="North Elementary" />North Elementary
-          <input type="checkbox" name="Howard A Yeager" />Howard A Yeager
-          <input type="checkbox" name="South Elementary" />South Elementary
+          <input type="text" class="form-control form-control-sm" name="phone" placeholder="phone number" />
           <hr />
         </div>
 
         <div class="form-group">
-          <p>
-            <b> What position(s) do you normally play? </b>(check all that apply)
-          </p>
+          <div class="form-row">
+            <p><b> Which elementary schools do you live near?</b></p>
+            <label for="fClosest"> <b> First Closest School:</b></label><br />
+            <div class="col-lg">
+              <label for="f1"><input type="radio" id="f1" name="AJ Katzenmaier"  /> AJ Katzenmaier</label>
+            </div>
+            <div class="col-lg">
+              <label for="f2"><input type="radio" id="f2" name="Marjorie P Hart" />Marjorie P Hart</label>
+            </div>
+            <div class="col-lg">
+              <label for="f3"><input type="radio" id="f3" name="Greenbay " />Greenbay</label>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-lg">
+              <label for="f4"><input type="radio" id="f4" name="North Elementary" />North Elementary</label>
+            </div>
+            <div class="col-lg">
+              <label for="f5"><input type="radio" id="f5" name="Howard A Yeager" />Howard A Yeager</label>
+            </div>
+            <div class="col-lg">
+              <label for="f6"><input type="radio" id="f6" name="South Elementary" />South Elementary</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="sClosest"> <b> Second Closest School:</b></label><br />
+            <div class="col-lg">
+              <label for="s1"><input type="radio" id="s1" name="Marjorie P Hart" />Marjorie P Hart</label>
+            </div>
+            <div class="col-lg">
+              <label for="s2"><input type="radio" id="s2" name="AJ Katzenmaier"  /> AJ Katzenmaier</label>
+            </div>
+            <div class="col-lg">
+              <label for="s3"><input type="radio" id="s3" name="Greenbay " />Greenbay</label>
+            </div>
+              <div class="w-100"></div>
+            <div class="col-lg">
+              <label for="s4"><input type="radio" id="s4" name="North Elementary" />North Elementary</label>
+            </div>
+            <div class="col-lg">
+              <label for="s5"><input type="radio" id="s5" name="Howard A Yeager" />Howard A Yeager</label>
+            </div>
+            <div class="col-lg">
+              <label for="s6"><input type="radio" id="s6" name="South Elementary" />South Elementary</label>
+            </div>
+            <hr />
+          </div>
+        </div>
 
-          <input type="checkbox" name="PlayForward" />Forward
-          <input type="checkbox" name="PlayMidfield" />Midfield
-          <input type="checkbox" name="PlayDefense" />Defense
-          <input type="checkbox" name="PlayGoalkeeper" />Goalkeeper
+        
+
+        <div class="form-group">
+          <div class="form-row">
+            <p>
+              <b> What position(s) do you normally play? </b>(check all that apply)
+            </p>
+          </div>
+          <div class="form-row">
+            <label for="nfor" class="col-sm"><input type="checkbox" id="nfor" name="PlayForward" />Forward</label>
+            <label for="nmid" class="col-sm"><input type="checkbox" id="nmid" name="PlayMidfield" />Midfield</label>
+            <label for="ndef" class="col-sm"><input type="checkbox" id="ndef" name="PlayDefense" />Defense</label>
+            <label for="ngoal" class="col-sm"><input type="checkbox" id="ngoal" name="PlayGoalkeeper" />Goalkeeper</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-row">
+            <p>
+              <b> What position(s) do you want to play? </b>(check all that apply)
+            </p>
+          </div>
+          <div class="form-row">
+            <label for="wfor" class="col-sm"><input type="checkbox" id="wfor" name="WantForward" />Forward</label>
+            <label for="wmid" class="col-sm"><input type="checkbox" id="wmid" name="WantMidfield" />Midfield</label>
+            <label for="wdef" class="col-sm"><input type="checkbox" id="wdef" name="WantDefense" />Defense</label>
+            <label for="wgoal" class="col-sm"><input type="checkbox" id="wgoal" name="WantGoalkeeper" />Goalkeeper</label>
+          </div>
+
           <hr />
         </div>
         <div class="form-group">
-          <p>
-            <b> What position(s) do you want to play? </b>(check all that apply)
-          </p>
+          
 
-          <input type="checkbox" name="WantForward" />Forward
-          <input type="checkbox" name="WantMidfield" />Midfield
-          <input type="checkbox" name="WantDefense" />Defense
-          <input type="checkbox" name="WantGoalkeeper" />Goalkeeper
-          <hr />
+          <input type="checkbox" /> <b> Already Have a Uniform</b> <br />
 
           <br />
 
           <div class="form-check">
-            <input type="checkbox" /> <b> Already Have a Uniform</b> <br />
+            
             <p>Jersey Size:</p>
-            <input type="radio" name="ys" /> Youth Small
-            <input type="radio" name="ym" /> Youth Medium
-            <input type="radio" name="yl" /> Youth Large
-            <input type="radio" name="s" /> Small
-            <input type="radio" name="m" /> Medium
-            <input type="radio" name="l" /> Large
-            <input type="radio" name="xl" /> Extra-Large
+            <div class="form-row">
+              <label class="col-md" for="jys"><input type="radio" id="jys" name="ys" /> Youth Small</label>
+              <label class="col-md" for="jym"><input type="radio" id="jym" name="ym" /> Youth Medium</label>
+              <label class="col-md" for="jyl"><input type="radio" id="jyl" name="yl" /> Youth Large</label>
+            </div>
+              <div class="w-100"></div>
+            <div class="form-row">
+              <label class="col-md" for="js"><input type="radio" id="js" name="s" /> Small</label>
+              <label class="col-md" for="jm"><input type="radio" id="jm" name="m" /> Medium</label>
+              <label class="col-md" for="jl"><input type="radio" id="jl" name="l" /> Large</label>
+            </div>
+              <div class="w-100"></div>
+            <div class="form-row">
+              <label class="col-md" for="jxl"><input type="radio" id="jxl" name="xl" /> Extra-Large</label>
+            </div>
           </div>
           <br />
           <div class="form-check">
-            <hr />
+            
 
             <p>Shorts Size:</p>
-            <input type="radio" name="ys" /> Youth Small
-            <input type="radio" name="ym" /> Youth Medium
-            <input type="radio" name="yl" /> Youth Large
-            <input type="radio" name="s" /> Small
-            <input type="radio" name="m" /> Medium
-            <input type="radio" name="l" /> Large
-            <input type="radio" name="xl" /> Extra-Large
+            <div class="form-row">
+              <label class="col-md" for="sys"><input type="radio" id="sys" name="ys" /> Youth Small</label>
+              <label class="col-md" for="sym"><input type="radio" id="sym" name="ym" /> Youth Medium</label>
+              <label class="col-md" for="syl"><input type="radio" id="syl" name="yl" /> Youth Large</label>
+            </div>
+              <div class="w-100"></div>
+            <div class="form-row">
+              <label class="col-md" for="ss"><input type="radio" id="ss" name="s" /> Small</label>
+              <label class="col-md" for="sm"><input type="radio" id="sm" name="m" /> Medium</label>
+              <label class="col-md" for="sl"><input type="radio" id="sl" name="l" /> Large</label>
+            </div>
+              <div class="w-100"></div>
+            <div class="form-row">
+              <label class="col-md" for="sxl"><input type="radio" id="sxl" name="xl" /> Extra-Large</label>
+            </div>
           </div>
+          <hr />
+        </div>
+        <div class="form-group">
           <div class="text">
-            <p>
+            <p class="text-justify">
               <b> Permission to Play</b> <br />
               I, the parent or guardian of the minor registrant, agree that the
               registrant and I will abide by all the rules of the Northside Youth
@@ -217,27 +298,32 @@
           </div>
 
           <div class="form-group">
-            <label for="Parent">Parent/Guardian:</label>
-            <input type="text" class="form-control" id="Parent" name="Parent" placeholder="Parent/Guardian" />
-          </div>
-          <div class="form-group col-md-2">
-            <label for="hDate">Date: </label>
-            <input type="date" class="form-control" id="Date" name="date" />
+            <div class="form-row">
+              <label class="col-sm" for="Parent">Parent/Guardian: <input type="text" class="form-control" id="Parent" name="Parent" placeholder="Parent/Guardian" /></label>
+              <label class="col-sm" for="Date">Date: <input type="date" class="form-control" id="Date" name="date" /></label>
+            </div>
           </div>
         </div>
-
-        <button type="submit" value="Submit" class="button2">Send</button>
+        <div class="form-row">
+          <!-- <div class="form-group"> -->
+            <button type="submit" value="Submit" class="button2 btn-block">Send</button>
+          <!-- </div> -->
+        </div>
       </form>
 
-      <br />
-      <div class="footer">
-        <section class="varios">
-          <p>
-            | Please email us at
-            <a class="mail" href="mailto:nysl@chisoccer.org">nysl@chisoccer.org |</a>
-          </p>
-          <p><b>We will reply to your email as soon as we can</b></p>
-        </section>
+      <button class="button" onclick="window.location.href='#top'">
+        <i class="fa fa-arrow-up fa-2x"></i>
+      </button>
 
-      </div>
+      <br />
+      <footer class="footerok text-center py-2 p-2 text-white">
+        <p>
+          <b> Please direct all questions to:</b> Michael Randall, League
+          Coordinator | <b> Phone:</b> (630) 690-8132 | <b> Email:</b>
+          <a class="mail" href="mailto:nysl@chisoccer.org"
+            >michael.randall@chisoccer.org</a>
+        </p>
+      </footer>
+
+      
 </body>
